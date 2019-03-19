@@ -8,24 +8,25 @@
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <!-- menu -->
-    <header>
-        <img id="logo" src="img/logo.gif" alt="campany logo">
-        <nav>
-            <dl>
-                <ul id="ul1" class="left"><a href="#"><div class="dot"></div><span>o nas</span></a></ul>
-                <ul id="ul2" class="right"><a href="#"><span>aktualności</span><div class="dot"></div></a></ul>
-                <ul id="ul3" class="left"><a href="#"><div class="dot"></div><span>usługi</span></a></ul>
-                <ul id="ul4" class="right"><a href="#"><span>galeria</span><div class="dot"></div></a></ul>
-                <ul id="ul5" class="left"><a href="#"><div class="dot"></div><span>kariera</span></a></ul>
-                <ul id="ul6" class="left"><a href="#"><div class="dot"></div><span>kontakt</span></a></ul>
-            </dl>
-        </nav>
-    </header>
     <!-- background -->
     <section id="main-background">
         <div id="back"></div>
-        <img id="stamp" src="img/pieczatka.gif" alt="additional background graphic">
+        <img id="stamp" src="img/pieczatka.gif" alt="pieczątka, grafika tła">
     </section>
+    <!-- menu -->
+    <header>
+        <img id="logo" src="img/logo.gif" alt="logo firmowe">
+        <nav>
+            <img id="map" src="img/mapa.gif" alt="mapa graficzna menu" usemap="#map">
+            <map name="map">
+                <area shape="rect" coords="140,30,220,60" href="#onas" alt="O nas">
+                <area shape="rect" coords="0,100,125,130" href="#aktualnosci" alt="Aktualności">
+                <area shape="rect" coords="160,132,240,162" href="#uslugi" alt="Usługi">
+                <area shape="rect" coords="25,233,118,263" href="#galeria" alt="Galeria">
+                <area shape="rect" coords="190,265,271,295" href="#kariera" alt="Kariera">
+                <area shape="rect" coords="140,380,240,410" href="#kontakt" alt="Kontakt">
+            </map>
+        </nav>
+    </header>
 </body>
 </html>

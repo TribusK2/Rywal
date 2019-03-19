@@ -1,7 +1,7 @@
-@font-face {
-    font-family: Kalam;
-    src: url(../fonts/Kalam-Bold.ttf);
-}
+/* @font-face {
+    font-family: Amble;
+    src: url(../fonts/palanquin-bold.ttf);
+} */
 
 * {
     margin: 0;
@@ -11,103 +11,46 @@
 /* background */
 #main-background {
     background-color: #ebebff;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
 }
 #back {
-    height: 100vh;
+    height: 100%;
     background-image: url("../img/tlo.gif");
-    background-size: 100vw auto;
+    background-size: 100% auto;
     background-position-x: center;
     background-position-y: center;
     background-repeat: no-repeat;
     opacity: 0.15;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0px;
     overflow: hidden;
 }
 #stamp {
-    width: 40vw;
-    bottom: 15vh;
-    position: -webkit-sticky;
-    position: sticky;
+    width: 40%;
+    bottom: 25%;
+    position: fixed;
     opacity: 0.3;
-    left: 50vw;
-    z-index: 0;
+    left: 70%;
+    overflow: hidden;
 }
 
 /* menu */
 header {
     position: absolute;
-    z-index: 1;
+    width: 100vw;
+    height: 100vh;
 }
 #logo {
-    width: 65vw;
+    position: relative;
+    width: 65%;
     background-color: white;
 }
-nav dl{
-    width: 90vw;
-    height: 30vh;
+nav {
+    height: 75%;
+    margin-top: -1%;
+    text-align: center;
 }
-header a {
-    text-decoration: none;
-    font-family: 'Kalam';
-    text-transform: uppercase;
-    font-size: bold;
-    color: #220055;
-    font-size: 6vw;
+#map {
+    height: 100%;
+    width: auto;
 }
-.dot {
-    width: 4vw;
-    height: 4vw;
-    border-radius: 4vw;
-    border: solid 1vw #220055;
-    background-color: #ffcc00;
-    display: inline-block;
-}
-.left span {
-    position: relative;
-    bottom: 0.5vh;
-    left: 3vw;
-}
-.right span {
-    position: relative;
-    bottom: 0.5vh;
-    right: 3vw;
-}
-#ul1 {
-    width: 30vw;
-    position: relative;
-    right: -55vw;
-    top: 7vh;
-}
-#ul2 {
-    width: 47vw;
-    position: relative;
-    left: 4vw;
-    top: 14vh;
-}
-#ul3 {
-    width: 30vw;
-    position: relative;
-    right: -65vw;
-    top: 15vh;
-}
-#ul4 {
-    width: 32vw;
-    position: relative;
-    left: 12vw;
-    top: 30vh;
-}
-#ul5 {
-    width: 35vw;
-    position: relative;
-    right: -61vw;
-    top: 30vh;
-}
-#ul6 {
-    width: 40vw;
-    position: relative;
-    right: -45vw;
-    top: 45vh;
-}
-
