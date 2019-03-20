@@ -2,10 +2,12 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
     <title>Rywal - Transport i Spedycja</title>
     <link rel="stylesheet" href="style/style.css">
+
 </head>
 <body>
     <!-- background -->
@@ -14,19 +16,30 @@
         <img id="stamp" src="img/pieczatka.gif" alt="pieczątka, grafika tła">
     </section>
     <!-- menu -->
-    <header>
-        <img id="logo" src="img/logo.gif" alt="logo firmowe">
-        <nav>
-            <img id="map" src="img/mapa.gif" alt="mapa graficzna menu" usemap="#map">
-            <map name="map">
-                <area shape="rect" coords="140,30,220,60" href="#onas" alt="O nas">
-                <area shape="rect" coords="0,100,125,130" href="#aktualnosci" alt="Aktualności">
-                <area shape="rect" coords="160,132,240,162" href="#uslugi" alt="Usługi">
-                <area shape="rect" coords="25,233,118,263" href="#galeria" alt="Galeria">
-                <area shape="rect" coords="190,265,271,295" href="#kariera" alt="Kariera">
-                <area shape="rect" coords="140,380,240,410" href="#kontakt" alt="Kontakt">
-            </map>
-        </nav>
-    </header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4">
+                <header>
+                    <img id="logo" src="img/logo.gif" alt="logo firmowe">
+                    <nav>
+                        <img id="map" src="img/mapa.gif" alt="mapa graficzna menu" usemap="#map">
+                        <a id="aboutUs" href="#" alt="O nas"><div></div></a>
+                        <a id="news" href="#" alt="Aktualności"><div></div></a>
+                        <a id="services" href="#" alt="Usługi"><div></div></a>
+                        <a id="gallery" href="#" alt="Galeria"><div></div></a>
+                        <a id="career" href="#" alt="Kariera"><div></div></a>
+                        <a id="contact" href="#" alt="Kontakt"><div></div></a>
+                    </nav>
+                </header>
+            </div>
+            <div class="col-sm-8">
+                <main>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo rem laboriosam excepturi iure quia saepe cum, quisquam deserunt quasi libero natus consequatur reiciendis nostrum, repellendus eius molestiae voluptatem earum suscipit.</p>
+                </main>
+            </div>
+        </div>
+    </div>
+    <script src="script/jquery-3.3.1.min.js"></script>
+    <script src="script/bootstrap.bundle.min.js"></script>
 </body>
 </html>
