@@ -34,29 +34,31 @@
     left: 70%;
     overflow: hidden;
 }
-
-/* menu */
-header {
-    max-height: 100%;
-    /* background-color: rgb(252, 190, 190); */
-}
+/* logo */
 #divLogo{
-    position: relative;
+    position: fixed;
     background-color: white;
-    width: 75%;
+    width: 120%;
     left: -10%;
-    
+    z-index: 1;
 }
 #logo {
     position: relative;
-    width: 50%;
-    left: 10%;
+    height: 10vh;
+    left: 13%;
     background-color: white;
+}
+
+/* menu */
+header {
+    position: relative;
+    top: 10vh;
+    max-height: 100%;
+    /* background-color: rgb(252, 190, 190); */
 }
 nav {
     position: relative;
     text-align: center;
-    /* left: 5%; */
     /* border: 2px solid green; */
 }
 #map{
@@ -123,27 +125,103 @@ nav {
 
 /* mainContent */
 main {
-    background-color: rgb(247, 247, 154);
+    /* background-color: rgb(247, 247, 154); */
+    position: relative;
+    top: 10vh;
     width: 100%;
-    
+    text-align: justify;
 }
 
-@media (min-width: 576px) and (max-width: 767px) and (orientation: landscape){
+@media (min-width: 480px) and (max-width: 575px) and (orientation: landscape){
+    #back {
+        background-size: 50% auto;
+        background-position-x: 5%;
+        background-position-y: 25%;
+    }
+    #stamp {
+        width: 20%;
+        bottom: 10%;
+        left: 45%;
+    }
+    .row{
+        flex-wrap: nowrap;
+    }
+    .col-xs{
+        width: 45%;
+    }
+    header {
+        position: fixed;
+        width: 30%
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    #back {
+        background-size: 50% auto;
+        background-position-x: 10%;
+        background-position-y: 25%;
+    }
+    #stamp {
+        width: 20%;
+        top: 70%;
+        left: 50%;
+    }
     header {
         position: fixed;
         width: 30%;
     }
 }
-
 @media (min-width: 768px) and (max-width: 991px){
+    #back {
+        background-size: 50% auto;
+        background-position-x: 10%;
+        background-position-y: 25%;
+    }
+    #stamp {
+        width: 20%;
+        bottom: 10%;
+        left: 50%;
+    }
     header {
+        left: 5%;
         position: fixed;
-        width: 23%;
+        width: 25%;
     }
 }
 @media (min-width: 992px){
+    #back {
+        background-size: 40% auto;
+        background-position-x: 10%;
+        background-position-y: 25%;
+    }
+    #stamp {
+        width: 20%;
+        bottom: 10%;
+        left: 50%;
+    }
     header {
+        left: 3%;
         position: fixed;
-        width: 23%;
+        width: 20%;
+    }
+}
+@media (min-width: 768px) and (orientation: portrait){
+    #back {
+        background-size: 80% auto;
+        background-position-x: 10%;
+        background-position-y: 25%;
+    }
+    #stamp {
+        width: 30%;
+        bottom: 20%;
+        left: 60%;
+    }
+    #logo {
+        height: 7vh;
+    }
+    header {
+        top: 7vh;
+    }
+    main {
+        top: 7vh;
     }
 }
