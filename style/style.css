@@ -122,13 +122,29 @@
 #mainConBox1{
     position: relative;
     border-left: 2px solid black;
-    height: 13vh;
+    height: 90px;
 }
 #mainConText1{
     position: absolute;
     font-family: Metropolis-SemiBoldItalic;
     top: -25%;
-    
+    font-size: 30px;
+}
+#lineHorizontal{
+    position: relative;
+    border-left: 2px solid black;
+    height: 90px;
+}
+#lineVertical{
+    position: relative;
+    border-bottom: 2px solid black;
+    width: 90px;
+}
+#mainConText2{
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    font-size: 24px;
 }
 /* main content end */
 
