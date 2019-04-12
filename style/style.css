@@ -3,8 +3,8 @@
     src: url(../fonts/metropolis/Metropolis-Bold.otf);
 }
 @font-face {
-    font-family: Metropolis-BoldItalic;
-    src: url(../fonts/metropolis/Metropolis-BoldItalic.otf);
+    font-family: Metropolis-SemiBoldItalic;
+    src: url(../fonts/metropolis/Metropolis-SemiBoldItalic.otf);
 }
 @font-face {
     font-family: Metropolis-Regular;
@@ -88,13 +88,29 @@
 /* background end*/
 
 /* menu */
-.a-hover{
-    margin-bottom: 1px;
-}
-.a-hover:hover{
-    border-bottom: 1px solid blue;
-    margin-bottom: 0px;
-}
+.a-hover {
+    display: inline-block;
+    position: relative;
+    color: #331177;
+  }
+  
+  .a-hover::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #5878F3;
+    transform-origin: bottom right;
+    transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
+  }
+  
+  .a-hover:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 /* menu end */
 
 /* main content */
@@ -106,12 +122,14 @@
 #mainConBox1{
     position: relative;
     border-left: 2px solid black;
-    height: 10vh;
+    height: 13vh;
 }
 #mainConText1{
     position: absolute;
-    font-family: Metropolis-RegularItalic;
+    font-family: Metropolis-SemiBoldItalic;
     top: -25%;
     
 }
 /* main content end */
+
+
