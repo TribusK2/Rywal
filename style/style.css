@@ -1,13 +1,28 @@
-/* @font-face {
-    font-family: Amble;
-    src: url(../fonts/palanquin-bold.ttf);
-} */
-
-/* * {
+@font-face {
+    font-family: Metropolis-Bold;
+    src: url(../fonts/metropolis/Metropolis-Bold.otf);
+}
+@font-face {
+    font-family: Metropolis-BoldItalic;
+    src: url(../fonts/metropolis/Metropolis-BoldItalic.otf);
+}
+@font-face {
+    font-family: Metropolis-Regular;
+    src: url(../fonts/metropolis/Metropolis-Regular.otf);
+}
+@font-face {
+    font-family: Metropolis-RegularItalic;
+    src: url(../fonts/metropolis/Metropolis-RegularItalic.otf);
+}
+* {
     margin: 0;
     padding: 0;
     border: 0;
-} */
+    font-family: Metropolis-Regular
+}
+.color-custom{
+    color: #331177;
+}
 
 /* background */
 #main-background {
@@ -19,7 +34,7 @@
 #back {
     height: 100%;
     background-image: url("../img/tlo.gif");
-    background-size: 100% auto;
+    background-size: 90%;
     background-position-x: center;
     background-position-y: center;
     background-repeat: no-repeat;
@@ -28,122 +43,75 @@
 }
 #stamp {
     width: 40%;
-    bottom: 25%;
+    bottom: 15%;
     position: fixed;
     opacity: 0.3;
-    left: 70%;
+    left: 65%;
     overflow: hidden;
 }
-
-/* menu */
-header {
-    max-height: 100%;
-    /* background-color: rgb(252, 190, 190); */
-}
-#divLogo{
-    position: relative;
-    background-color: white;
-    width: 75%;
-    left: -10%;
-    
-}
-#logo {
-    position: relative;
-    width: 50%;
-    left: 10%;
-    background-color: white;
-}
-nav {
-    position: relative;
-    text-align: center;
-    /* left: 5%; */
-    /* border: 2px solid green; */
-}
-#map{
-    position: relative;
-    max-width: 100%;
-    /* background-color: rgb(148, 143, 143); */
-}
-#links{
-    position: absolute;
-    opacity: 0.7;
-    top: 0;
-    /* background-color: rgb(178, 178, 238); */
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-#aboutUs{
-    position: absolute;
-    top: 7.2%;
-    left: 50%; 
-    width: 30%;
-    height: 5%;
-}
-#news{
-    position: absolute;
-    top: 22%;
-    left: -1.5%;
-    width: 49%;
-    height: 5%;
-}
-#services{
-    position: absolute;
-    top: 28.7%;
-    left: 58%;
-    width: 30%;
-    height: 5%;
-}
-#gallery{
-    position: absolute;
-    top: 50.2%;
-    left: 10.5%;
-    width: 34%;
-    height: 5%;
-}
-#career{
-    position: absolute;
-    top: 56.7%;
-    left: 69.5%;
-    width: 32%;
-    height: 5%;
-}
-#contact{
-    position: absolute;
-    top: 81.4%;
-    left: 50.5%;
-    width: 37%;
-    height: 5%;
-}
-.aInside{
-    width: 100%;
-    height: 100%;
-    /* border: 2px solid red; */
-}
-
-/* mainContent */
-main {
-    background-color: rgb(247, 247, 154);
-    width: 100%;
-    
-}
-
-@media (min-width: 576px) and (max-width: 767px) and (orientation: landscape){
-    header {
-        position: fixed;
-        width: 30%;
+@media (max-width: 991px) and (orientation: landscape){
+    #back {
+        background-size: 60%;
+    }
+    #stamp {
+        width: 20%;
+        bottom: 5%;
     }
 }
-
 @media (min-width: 768px) and (max-width: 991px){
-    header {
-        position: fixed;
-        width: 23%;
+    #back {
+        background-size: 70%;
+    }
+    #stamp {
+        width: 25%;
     }
 }
 @media (min-width: 992px){
-    header {
-        position: fixed;
-        width: 23%;
+    #back {
+        background-size: 55%;
+    }
+    #stamp {
+        width: 20%;
+        bottom: 5%;
     }
 }
+@media (min-width: 768px) and (orientation: portrait){
+    #back {
+        background-size: 80%;
+    }
+    #stamp {
+        width: 25%;
+        bottom: 15%;
+        left: 65%;
+    }
+}
+/* background end*/
+
+/* menu */
+.a-hover{
+    margin-bottom: 1px;
+}
+.a-hover:hover{
+    border-bottom: 1px solid blue;
+    margin-bottom: 0px;
+}
+/* menu end */
+
+/* main content */
+.mainContentFoto{
+    max-width: 100%;
+    height: auto;
+    border: 2px solid black;
+}
+#mainConBox1{
+    position: relative;
+    border-left: 2px solid black;
+    height: 10vh;
+}
+#mainConText1{
+    position: absolute;
+    font-family: Metropolis-RegularItalic;
+    top: -25%;
+    
+}
+/* main content end */

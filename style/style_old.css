@@ -1,0 +1,149 @@
+/* @font-face {
+    font-family: Amble;
+    src: url(../fonts/palanquin-bold.ttf);
+} */
+
+/* * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+} */
+
+/* background */
+#main-background {
+    background-color: #ebebff;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+}
+#back {
+    height: 100%;
+    background-image: url("../img/tlo.gif");
+    background-size: 100% auto;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    opacity: 0.15;
+    overflow: hidden;
+}
+#stamp {
+    width: 40%;
+    bottom: 25%;
+    position: fixed;
+    opacity: 0.3;
+    left: 70%;
+    overflow: hidden;
+}
+
+/* menu */
+header {
+    max-height: 100%;
+    /* background-color: rgb(252, 190, 190); */
+}
+#divLogo{
+    position: relative;
+    background-color: white;
+    width: 75%;
+    left: -10%;
+    
+}
+#logo {
+    position: relative;
+    width: 50%;
+    left: 10%;
+    background-color: white;
+}
+nav {
+    position: relative;
+    text-align: center;
+    /* left: 5%; */
+    /* border: 2px solid green; */
+}
+#map{
+    position: relative;
+    max-width: 100%;
+    /* background-color: rgb(148, 143, 143); */
+}
+#links{
+    position: absolute;
+    opacity: 0.7;
+    top: 0;
+    /* background-color: rgb(178, 178, 238); */
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#aboutUs{
+    position: absolute;
+    top: 7.2%;
+    left: 50%; 
+    width: 30%;
+    height: 5%;
+}
+#news{
+    position: absolute;
+    top: 22%;
+    left: -1.5%;
+    width: 49%;
+    height: 5%;
+}
+#services{
+    position: absolute;
+    top: 28.7%;
+    left: 58%;
+    width: 30%;
+    height: 5%;
+}
+#gallery{
+    position: absolute;
+    top: 50.2%;
+    left: 10.5%;
+    width: 34%;
+    height: 5%;
+}
+#career{
+    position: absolute;
+    top: 56.7%;
+    left: 69.5%;
+    width: 32%;
+    height: 5%;
+}
+#contact{
+    position: absolute;
+    top: 81.4%;
+    left: 50.5%;
+    width: 37%;
+    height: 5%;
+}
+.aInside{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+
+/* mainContent */
+main {
+    background-color: rgb(247, 247, 154);
+    width: 100%;
+    
+}
+
+@media (min-width: 576px) and (max-width: 767px) and (orientation: landscape){
+    header {
+        position: fixed;
+        width: 30%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    header {
+        position: fixed;
+        width: 23%;
+    }
+}
+@media (min-width: 992px){
+    header {
+        position: fixed;
+        width: 23%;
+    }
+}
