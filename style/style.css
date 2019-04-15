@@ -18,7 +18,7 @@
     margin: 0;
     padding: 0;
     border: 0;
-    font-family: Metropolis-Regular
+    font-family: Metropolis-Regular;
 }
 .color-custom{
     color: #331177;
@@ -122,7 +122,8 @@
 #mainConBox1{
     position: relative;
     border-left: 2px solid black;
-    height: 90px;
+    height: 100px;
+    top: 10px;
 }
 #mainConText1{
     position: absolute;
@@ -131,17 +132,17 @@
     font-size: 30px;
 }
 #mainConText2{
-    width: 300px;
+    width: 100%;
     font-size: 24px;
+    font-family: Metropolis-RegularItalic ;
 }
 
     /* cross effect */
     #lineHorizontal{
-        position: absolute;
+        position: relative;
         border-left: 2px solid black;
         height: 90px;
-        top: 20px;
-        left: 0px;
+        top: -47px;
     }
     #lineVertical{
         position: relative;
@@ -151,7 +152,11 @@
         left: -45px;
     }
     /* cross effect end */
-
+#Photo2{
+    width: 400px;
+    position: relative;
+    top: -75px;
+}
 /* main content end */
 
 
