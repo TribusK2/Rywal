@@ -130,22 +130,28 @@
     top: -25%;
     font-size: 30px;
 }
-#lineHorizontal{
-    position: relative;
-    border-left: 2px solid black;
-    height: 90px;
-}
-#lineVertical{
-    position: relative;
-    border-bottom: 2px solid black;
-    width: 90px;
-}
 #mainConText2{
-    position: absolute;
-    top: -40px;
-    left: 10px;
+    width: 300px;
     font-size: 24px;
 }
+
+    /* cross effect */
+    #lineHorizontal{
+        position: absolute;
+        border-left: 2px solid black;
+        height: 90px;
+        top: 20px;
+        left: 0px;
+    }
+    #lineVertical{
+        position: relative;
+        border-bottom: 2px solid black;
+        width: 90px;
+        top: 45px;
+        left: -45px;
+    }
+    /* cross effect end */
+
 /* main content end */
 
 
