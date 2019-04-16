@@ -17,13 +17,13 @@
     </section>
     <!-- background end-->
 
-    <div class="container-fluid">
+    <div id="start" class="container-fluid">
         <!-- menu -->
         <div class="row">
-            <header class="col bg-white fixed-top">
+            <header id="navbar" class="col bg-white fixed-top">
                 <nav class="navbar navbar-expand-md p-0">
-                    <a class="navbar-brand" href="#">                  
-                        <img src="img/logo.gif" width="auto" height="90" class="d-inline-block align-top" alt="logo firmowe firmy Rywal">
+                    <a class="navbar-brand" href="#start">                  
+                        <img id="brandLogo" src="img/logo.gif" width="auto" height="90" class="d-inline-block align-top" alt="logo firmowe firmy Rywal">
                     </a>
                     <button class="btn btn-outline-light navbar-toggler btn-lg mb-2" type="button" data-toggle="collapse" data-target="#navbarNav">
                         <span class="navbar-toggler-icon align-items-center"><i class="fas fa-bars fa-2x color-custom"></i></span>
@@ -35,7 +35,7 @@
                             <a class="a-hover nav-item mx-1 font-weight-bold text-capitalize color-custom nav-link" href="#uslugi" alt="Usługi oferowane przez firmę Rywal">Usługi</a>
                             <a class="a-hover nav-item mx-1 font-weight-bold text-capitalize color-custom nav-link" href="#galria" alt="Galeria zdjęć">Galeria</a>
                             <a class="a-hover nav-item mx-1 font-weight-bold text-capitalize color-custom nav-link" href="#kariera" alt="Informacje o zatrudnieniu w firmie Rywal">Kariera</a>
-                            <a class="a-hover nav-item mx-1 font-weight-bold text-capitalize color-custom nav-link" href="#kontakt" alt="Dane kontaktowe do firmy Rywal">Kontakt</a>
+                            <a class="a-hover nav-item mx-1 font-weight-bold text-capitalize color-custom nav-link" href="#contact" alt="Dane kontaktowe do firmy Rywal">Kontakt</a>
                         </div>
                     </div>
                 </nav>
@@ -48,13 +48,13 @@
             <main class="col">
                 <div class="row ml-1 ml-md-4 ml-lg-1 ml-xl-0 my-5 pt-3 pb-2 pb-md-5 align-items-end justify-content-start">
                     <div class="col-5 col-xl-4 pr-3 text-right">
-                        <img class="img-fluid mainContentFoto" src="img/tir-01.gif" alt="Zdjęcie dwóch cięzarówek">
+                        <img class="img-fluid mainContentFoto" src="img/tir-01.gif" alt="Dwie ciężarówki">
                     </div>
                     <div class="col-6" id="mainConBox1">
                         <h2 id="mainConText1">Jesteśmy zawsze na czas.</h2>
                     </div>
                 </div>
-                <div class="row mr-5 mr-xl-0 mt-lg-2 mt-xl-3 pt-xl-3 justify-content-end">
+                <div class="row mr-5 mr-xl-0 mt-lg-2 mt-xl-3 pt-3 pt-xl-3 justify-content-center">
                     <div class="col-8 col-xl-6">
                         <div class="row justify-content-start">
                             <div class="col-12" id="mainConBox2">
@@ -66,16 +66,48 @@
                         </div>
                         <div class="row justify-content-start"> 
                             <div class="col">
-                                <img class="img-fluid mainContentFoto" id="Photo2" src="img/tir-02.gif" alt="Zdjęcie holowanej ciężarówki">
+                                <img class="img-fluid mainContentFoto" id="Photo2" src="img/tir-02.gif" alt="Holowana ciężarówka">
                             </div>
                         </div>
                     </div>
                 </div>    
             </main>
+        
+            <div class="row">
+                <div class="col py-5 bg-light">
+                    <div class="row px-3">
+                        <div class="col-sm-7 col-lg-6 mx-lg-4">
+                            <h1 class="text-dark">Header</h1>
+                            <p class="text-secondary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos impedit exercitationem ab molestiae facere placeat soluta quam, corporis eligendi sequi minus, ut vel! Suscipit, architecto delectus qui corrupti itaque voluptas, vitae fugit ea dolorem odit iste magni officia, error asperiores quas eaque eos non deleniti. Corrupti mollitia tempora inventore sequi.</p>
+                        </div>
+                        <div class="col-sm-5">
+                            <img id="roadPic" class="img-fluid" src="img/forest-road.jpg" alt="Gruntowa droga w lesie">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact" class="row justify-content-center">
+                <div class="col-10 py-5">
+                    <div class="row px-1 mx-1 px-md-5 mx-md-5 my-3 py-3 my-lg-4 py-lg-4 my-xl-5 py-xl-5 justify-content-center">
+                        <h1 class="text-dark">Header</h1>
+                        <h4 class="text-dark text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa eum ad accusamus nemo magni quos amet, consectetur placeat quod veritatis!</h4>
+                    </div>    
+                </div>
+            </div>
+            <div class="row">
+                <div id="gpsSymbolPic" class="col bg-dark"></div>
+            </div>
+        </div>    
+        <div class="row">
+            <footer class="col py-2 bg-light text-dark text-right">
+                <p>Copyright &copy; 2019 TribusK2</p> 
+            </footer>
         </div>
+        
         <!-- main content end-->
     </div>
     <script src="script/jquery-3.3.1.min.js"></script>
     <script src="script/bootstrap.bundle.min.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>

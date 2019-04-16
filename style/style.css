@@ -88,12 +88,20 @@
 /* background end*/
 
 /* menu */
+
+    /* scroll effect */
+#brandLogo{
+    height: 90px;
+    transition: height 0.5s;
+}
+    /* scroll effect end */
+
+    /* hoover effect */
 .a-hover {
     display: inline-block;
     position: relative;
     color: #331177;
   }
-  
   .a-hover::after {
     content: '';
     position: absolute;
@@ -106,11 +114,12 @@
     transform-origin: bottom right;
     transition: transform 0.4s cubic-bezier(0.86, 0, 0.07, 1);
   }
-  
   .a-hover:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+    /* hoover effect end*/
+
 /* menu end */
 
 /* main content */
@@ -122,18 +131,18 @@
 #mainConBox1{
     position: relative;
     border-left: 2px solid black;
-    height: 100px;
-    top: 10px;
+    height: 90px;
+    top: 20px;
 }
 #mainConText1{
     position: absolute;
     font-family: Metropolis-SemiBoldItalic;
     top: -25%;
-    font-size: 30px;
+    font-size: 6vw;
 }
 #mainConText2{
     width: 100%;
-    font-size: 24px;
+    font-size: 5vw;
     font-family: Metropolis-RegularItalic ;
 }
 
@@ -152,11 +161,51 @@
         left: -45px;
     }
     /* cross effect end */
+    
 #Photo2{
-    width: 400px;
+    width: 330px;
     position: relative;
     top: -75px;
 }
+
+    /* font resize */
+@media (min-width: 568px) and (max-width: 991px){
+    #mainConText1{
+        font-size: 5vw;
+    }
+    #mainConText2{
+        font-size: 4vw;
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px){
+    #mainConText1{
+        font-size: 4vw;
+    }
+    #mainConText2{
+        font-size: 3vw;
+    }
+}
+@media (min-width: 1201px){
+    #mainConText1{
+        font-size: 3vw;
+    }
+    #mainConText2{
+        font-size: 2vw;
+    }
+}
+    /* font resize end */
+
+    /* GPS picture */
+#gpsSymbolPic{
+    width: 100vw;
+    height: 40vh;
+    background-image: url(../img/gps-symbol.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: center;
+    background-size: cover
+}
+    /* GPS picture end */
 /* main content end */
 
 
