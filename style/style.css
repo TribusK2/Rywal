@@ -128,6 +128,9 @@
     height: auto;
     border: 2px solid black;
 }
+#mainPic1{
+    opacity: 0.1;
+}
 #mainConBox1{
     position: relative;
     border-left: 2px solid black;
@@ -139,11 +142,15 @@
     font-family: Metropolis-SemiBoldItalic;
     top: -25%;
     font-size: 6vw;
+    left: 25px;
+    opacity: 0.1;
 }
 #mainConText2{
     width: 100%;
     font-size: 5vw;
-    font-family: Metropolis-RegularItalic ;
+    font-family: Metropolis-RegularItalic;
+    opacity: 0;
+    padding-left: 15px;
 }
 
     /* cross effect */
@@ -152,6 +159,7 @@
         border-left: 2px solid black;
         height: 90px;
         top: -47px;
+        opacity: 0;
     }
     #lineVertical{
         position: relative;
@@ -162,10 +170,12 @@
     }
     /* cross effect end */
     
-#Photo2{
+#mainPic2{
     width: 330px;
     position: relative;
     top: -75px;
+    left: 25px;
+    opacity: 0;
 }
 
     /* font resize */
