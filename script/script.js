@@ -45,10 +45,16 @@ $(document).ready(function(){
       // content scroll effect end
 
       // road picture scroll effect
+      var allRoadPic = $(".roadPic");
+      
     if (prevScrollpos > currentScrollPos) {
-      $("#roadPic").attr("src", "img/asphalt-road.jpg");
+      $(allRoadPic[0]).fadeOut(100, function(){
+        $(allRoadPic[1]).fadeIn(100);
+      });
     } else {
-      $("#roadPic").attr("src", "img/forest-road.jpg");
+      $(allRoadPic[1]).fadeOut(100, function(){
+        $(allRoadPic[0]).fadeIn(100);
+      });
     }
     prevScrollpos = currentScrollPos;
       // road picture scroll effect end

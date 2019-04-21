@@ -205,6 +205,15 @@
 }
     /* font resize end */
 
+    /* road picture fade effect */
+.roadPic{
+    display: none;
+}
+.roadPic:first-of-type{
+    display: block;
+}
+    /* road picture fade effect end */
+    
     /* GPS picture */
 #gpsSymbolPic{
     width: 100vw;
