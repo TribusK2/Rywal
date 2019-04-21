@@ -162,7 +162,7 @@
         opacity: 0;
     }
     #lineVertical{
-        position: relative;
+        position: absolute;
         border-bottom: 2px solid black;
         width: 90px;
         top: 45px;
@@ -216,14 +216,33 @@
     
     /* GPS picture */
 #gpsSymbolPic{
-    width: 100vw;
-    height: 40vh;
     background-image: url(../img/gps-symbol.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: center;
-    background-size: cover
+    background-size: 170%;
 }
+        /* GPS picture resize */
+        @media (max-width: 320px){
+            #gpsSymbolPic {
+                background-size: 220%;
+            }
+        }
+        @media (max-width: 767px) and (orientation: landscape){
+            #gpsSymbolPic {
+                background-size: 120%;
+            }
+        }
+        @media (min-width: 768px){
+            #gpsSymbolPic {
+                background-size: 100%;
+            }
+        }
+        /* GPS picture resize end */
+
+    #gpsSymbolPic > div{
+        background-color: rgba(218, 221, 228, 0.6)
+    }
     /* GPS picture end */
 /* main content end */
 
