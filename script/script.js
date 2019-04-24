@@ -59,6 +59,17 @@ $(document).ready(function(){
     prevScrollpos = currentScrollPos;
       // road picture scroll effect end
   });
+
+  // news collapse button text
+  var newsButtonText = $('button[aria-expanded]');
+  $(newsButtonText).click(function (){
+    if ( $(this).hasClass("collapsed")) {
+      $(this).text('. . . zwiń.');
+    } else {
+      $(this).text('Czytaj dalej . . .');
+    }
+  });
+  // news collapse button text end
 });
 
 

@@ -122,7 +122,7 @@
 
 /* menu end */
 
-/* main content */
+/* index content */
 .mainContentFoto{
     max-width: 100%;
     height: auto;
@@ -244,6 +244,24 @@
         background-color: rgba(218, 221, 228, 0.6)
     }
     /* GPS picture end */
-/* main content end */
+/* index content end */
 
+/* news content */
+.newsPicCard{
+    position: relative;
+}
+/* .newsPic{
+    max-height: 200px;
+} */
+.newsHeader{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    background-color: rgba(50, 30, 120, 0.7);
+}
+.newsStrap{
+    height: 3px;
+    background-image: linear-gradient(to right, rgba(50, 30, 120, 1),rgba(50, 30, 120, 0))
+}
 
+/* news content end*/
