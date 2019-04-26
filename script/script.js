@@ -14,7 +14,7 @@ $(document).ready(function(){
     }
       // menu scroll effect end
 
-      // content scroll effect
+      // index content scroll effect
     if (screen.width < 568){
       if (currentScrollPos >= 30) {
         $("#lineHorizontal").animate({"opacity" : "1"}, 1000, "linear");
@@ -42,7 +42,7 @@ $(document).ready(function(){
         }
       }
     }
-      // content scroll effect end
+      // index content scroll effect end
 
       // road picture scroll effect
       var allRoadPic = $(".roadPic");
@@ -60,8 +60,14 @@ $(document).ready(function(){
       // road picture scroll effect end
   });
 
+  // hide collapsed menu
+  $(window).click(function(){
+    $("#navbarNav").collapse("hide");
+  });
+  // hide collapsed menu end
+
   // news collapse button text
-  var newsButtonText = $('button[aria-expanded]');
+  var newsButtonText = $('.buttonText');
   $(newsButtonText).click(function (){
     if ( $(this).hasClass("collapsed")) {
       $(this).text('. . . zwiń.');

@@ -23,6 +23,27 @@
 .color-custom{
     color: #331177;
 }
+p{
+    text-indent: 4%;
+}
+
+/* bootstrap btn class changed */
+.btn-outline-primary{
+    color: #321e78;
+    border-color: #321e78;
+}
+.btn-outline-primary:hover{
+    background-color: rgba(50, 30, 120, 0.2);
+    border-color: #321e78;
+    color: #321e78;
+}
+.btn-outline-primary:active,.btn-outline-primary:focus{
+    background-color: rgba(50, 30, 120, 0.1) !important;
+    border-color: rgba(50, 30, 120, 0.1) !important;
+    color: #321e78 !important;
+    box-shadow: none !important;
+}
+/* bootstrap btn class changed end*/
 
 /* background */
 #main-background {
@@ -241,7 +262,7 @@
         /* GPS picture resize end */
 
     #gpsSymbolPic > div{
-        background-color: rgba(218, 221, 228, 0.6)
+        background-color: rgba(218, 221, 228, 0.6);
     }
     /* GPS picture end */
 /* index content end */
@@ -260,5 +281,81 @@
     height: 3px;
     background-image: linear-gradient(to right, rgba(50, 30, 120, 1),rgba(50, 30, 120, 0))
 }
-
 /* news content end*/
+
+/* carrer content */
+.careerPicCard{
+    position: relative;
+    height: 30vh;
+    background-image: url(../img/truck-on-road.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    transform: scaleX(-1);
+    transition: 500ms ease-in-out;
+}
+.careerPicCard:hover{
+    background-size: 110%;
+}
+.careerPicCard:hover > .careerHeader{
+    font-size: 4.5vh;
+    top: 18vh;
+}
+.careerHeader{
+    position: absolute;
+    top: 20vh;
+    right: 8vw;
+    background-color: rgba(50, 30, 120, 0.7);
+    transform: scaleX(-1);
+    transition: 500ms ease-in-out;
+}
+    /* career content resize */
+    @media (max-width: 991px) and (orientation: landscape){
+        .careerHeader{
+            top: 12vh;
+        }
+        .careerPicCard:hover > .careerHeader{
+            font-size: 8vh;
+            top: 10vh;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 991px){
+        .careerHeader{
+            font-size: 2em;
+        }
+        .careerPicCard:hover > .careerHeader{
+            font-size: 3.6vh;
+            top: 8vh;
+        }
+    }
+    @media (min-width: 992px){
+        .careerHeader{
+            font-size: 3em;
+            top: 15vh;
+        }
+        .careerPicCard:hover > .careerHeader{
+            font-size: 7vh;
+            top: 12vh;
+        }
+    }
+    @media (min-width: 768px) and (orientation: portrait){
+        .careerHeader{
+            top: 10vh;
+        }
+        .careerPicCard{
+            height: 20vh;
+        }
+        .careerPicCard:hover > .careerHeader{
+            font-size: 3.8vh;
+            top: 8vh;
+        }
+    }
+    /* career content resize end*/
+    
+    /* carrer form */
+    form{
+        border-radius: 4%;
+        background-color: rgba(235, 235, 255, 0.8);
+    }
+    /* carrer form end */
+/* career content end*/
