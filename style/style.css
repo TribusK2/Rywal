@@ -334,7 +334,7 @@ p{
             top: 15vh;
         }
         .careerPicCard:hover > .careerHeader{
-            font-size: 7vh;
+            font-size: 8vh;
             top: 12vh;
         }
     }
@@ -358,4 +358,21 @@ p{
         background-color: rgba(235, 235, 255, 0.8);
     }
     /* carrer form end */
+
 /* career content end*/
+
+/* gallery */
+
+.carousel-indicators{
+    position: relative;
+    width: 100%;
+}
+.carousel-indicators li{
+    height: 10vh;
+    width: 15vh;
+}
+.carousel-indicators li img{
+    height: 100%;
+}
+
+/* gallery end*/

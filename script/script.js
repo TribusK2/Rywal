@@ -76,6 +76,18 @@ $(document).ready(function(){
     }
   });
   // news collapse button text end
+
+  // gallery carousel active display
+  // var carouselItems = $(".carousel-item");
+  // var carouselMinats = $(".carousel-indicators li");
+  // var carouselChange = {class: true};
+  // var carouselExecute = function(){
+  // console.log(carouselItems);
+  // console.log(carouselMinats);
+  // }
+  // var observer = new MutationObserver(carouselExecute);
+  // observer.observe(carouselItems, carouselChange);
+  // gallery carousel active display end
 });
 
 
