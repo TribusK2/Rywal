@@ -69,7 +69,7 @@ $(document).ready(function(){
   // news collapse button text
   var newsButtonText = $('.buttonText');
   $(newsButtonText).click(function (){
-    if ( $(this).hasClass("collapsed")) {
+    if ($(this).hasClass('collapsed')) {
       $(this).text('. . . zwiń.');
     } else {
       $(this).text('Czytaj dalej . . .');
@@ -78,16 +78,36 @@ $(document).ready(function(){
   // news collapse button text end
 
   // gallery carousel active display
-  // var carouselItems = $(".carousel-item");
-  // var carouselMinats = $(".carousel-indicators li");
-  // var carouselChange = {class: true};
-  // var carouselExecute = function(){
-  // console.log(carouselItems);
-  // console.log(carouselMinats);
-  // }
-  // var observer = new MutationObserver(carouselExecute);
-  // observer.observe(carouselItems, carouselChange);
+  var carouselItem = $('.carousel-item');
+  var carouselPrev = $('.carousel-indicators li');
+  var event = {attributes: true,                  // set items to listener
+                childList: false,
+                characterData: false};            
+  var callback = function(){                      // define function to start when class changed
+    carouselPrev.each(function(){
+        for (i = 0; i < carouselItem.length; i++){
+          if ($(carouselItem[i]).hasClass('active')){
+            $(carouselPrev[i]).addClass('active');
+          } else {
+            $(carouselPrev[i]).removeClass('active')
+          }
+        }
+    })
+  };
+  var observer = new MutationObserver(callback);  // set MutationObserver event
+  carouselItem.each(function(){            // start MutationObserver event and define which elements too
+    observer.observe(this, event)
+  });
   // gallery carousel active display end
+
+  // gallery modal content display
+  var caruousels = $('.carousel-inner');
+  caruousels.click(function(){
+    var image = $(this).find('.active').find('img');
+    var imageeSrc = image.attr('src');
+    $('.modal-body').find('img').attr('src', imageeSrc);
+  });
+  // gallery modal content display end
 });
 
 

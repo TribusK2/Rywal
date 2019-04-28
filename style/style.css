@@ -365,11 +365,10 @@ p{
 
 .carousel-indicators{
     position: relative;
-    width: 100%;
 }
 .carousel-indicators li{
-    height: 10vh;
-    width: 15vh;
+    height: auto;
+    width: auto;
 }
 .carousel-indicators li img{
     height: 100%;
