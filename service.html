@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Rywal - Transport i Spedycja</title>
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -31,8 +31,8 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                         <div class="navbar-nav">   
                             <a class="a-hover nav-item mx-1 text-capitalize color-custom nav-link" href="index.html" alt="Podstawowe informacje o firmie Rywal">O nas</a>
-                            <a class="a-hover nav-item mx-1 text-capitalize color-custom nav-link active" href="news.html" alt="Nasze aktualności">Aktualności</a>
-                            <a class="a-hover nav-item mx-1 text-capitalize color-custom nav-link" href="#uslugi" alt="Usługi oferowane przez firmę Rywal">Usługi</a>
+                            <a class="a-hover nav-item mx-1 text-capitalize color-custom nav-link" href="news.html" alt="Nasze aktualności">Aktualności</a>
+                            <a class="a-hover nav-item mx-1 text-capitalize color-custom nav-link active" href="service.html" alt="Usługi oferowane przez firmę Rywal">Usługi</a>
                             <a class="a-hover nav-item mx-1 text-capitalize color-custom nav-link" href="gallery.html" alt="Galeria zdjęć">Galeria</a>
                             <a class="a-hover nav-item mx-1 text-capitalize color-custom nav-link" href="career.html" alt="Informacje o zatrudnieniu w firmie Rywal">Kariera</a>
                             <a class="a-hover nav-item mx-1 text-capitalize color-custom nav-link" href="#gpsSymbolPic" alt="Dane kontaktowe do firmy Rywal">Kontakt</a>
@@ -46,81 +46,162 @@
         <!-- main content -->
         <div class="row my-5"></div>
 
-            <!-- first news -->
-        <div class="row">
-            <div class="col py-5">
-                <div class="row px-3 justify-content-center">
-                    <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3">
-                        <div class="newsPicCard">
-                            <img class="img-fluid" src="img/newsPic001.jpg" alt="Koparka ładuje zięmię na ciężarówkę">
-                            <h4 class="newsHeader text-light font-weight-bold m-0 px-2 py-1">Header first</h4>
+            <!-- header -->
+            <div class="row justify-content-center">
+                <div class="col-10 py-5">
+                    <div class="row px-1 mx-1 px-md-5 mx-md-5 my-3 py-3 my-lg-4 py-lg-4 my-xl-5 py-xl-5 justify-content-center">
+                        <div class="text-center">
+                            <div class="textCarousel">
+                                <h1 class="text-dark">Header 1</h1>
+                                <h4 class="text-dark text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa eum ad accusamus nemo magni quos amet, consectetur placeat quod veritatis!</h4>
+                            </div>
+                            <div class="textCarousel">
+                                <h1 class="text-dark">Header 2</h1>
+                                <h4 class="text-dark text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque adipisci aliquid saepe autem, accusamus dicta laborum omnis repudiandae fugit rerum.</h4>
+                            </div>
+                            <div class="textCarousel">
+                                <h1 class="text-dark">Header 3</h1>
+                                <h4 class="text-dark text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam quidem itaque culpa harum corporis earum architecto soluta quo hic eum.</h4>
+                            </div>
                         </div>
-                        <div class="newsStrap mt-3 mb-1"></div>
-                        <p class="newsDate">02.05.2019</p> 
-                    </div>
-                    <div class="col-sm-6">
-                        <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore, necessitatibus eligendi? Vel saepe distinctio exercitationem.</p>
-                        <p id="news001" class="collapse text-dark text-justify">Quos impedit exercitationem ab molestiae facere placeat soluta quam, corporis eligendi sequi minus, ut vel! Suscipit, architecto delectus qui corrupti itaque voluptas, vitae fugit ea dolorem odit iste magni officia, error asperiores quas eaque eos non deleniti. Corrupti mollitia tempora inventore sequi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat magnam nisi culpa alias ducimus id dignissimos itaque fugiat facere sed!</p>
-                        <button class="buttonText btn btn-link font-weight-bold text-dark text-decoration-none collapsed" type="button" data-toggle="collapse" data-target="#news001" aria-expanded="false" aria-controls="news001">Czytaj dalej . . .</button>
-                    </div>
+                    </div>    
                 </div>
             </div>
-        </div>
-            <!-- first news end -->
+            <!-- header end -->
 
-            <!-- second news -->
-        <div class="row">
-            <div class="shadow col py-5 bg-light">
+            <!-- table -->
+        <div id="truckTable" class="row">
+            <div class="shadow col pt-5 pb-0 mb-0 bg-light">
                 <div class="row px-3 justify-content-start">
-                    
-                    <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3 order-first order-sm-last">
-                        <div class="newsPicCard">
-                            <img class="img-fluid" src="img/truck-01.png" alt="Ciężarówka załadowana dużą ilością siana">
+                    <h3 class="col mb-4">Nasza flota</h3>
+                    <table class="table table-responsive-md m-0 mb-4">
+                        <thead>
+                            <tr class="text-center text-nowrap">
+                              <th scope="col">Pojazd</th>
+                              <th scope="col" style="min-width:200px;">Model</th>
+                              <th scope="col">Rok produkcji</th>
+                              <th scope="col">L x H [m]</th>
+                              <th scope="col">Objętość [m<sup>3</sup>]</th>
+                              <th scope="col">Dostępność</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="text-center">
+                                <th class="align-middle" scope="row">1.</th>
+                                <td class="align-middle">
+                                    <img class="img-fluid" src="img/truck-01.png" alt="Schemat cieżarówki w wersji z naczepą">
+                                </td>
+                                <td class="align-middle">2015</td>
+                                <td class="align-middle">20 x 3</td>
+                                <td class="align-middle">200</td>
+                                <td class="align-middle"><a href="mailto:biuro@rywal.pl?subject=Zapytanie o dostępność: Pojazd 1"><button class="btn btn-success">Zapytaj</button></a></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th class="align-middle" scope="row">2.</th>
+                                <td class="align-middle">
+                                    <img class="img-fluid" src="img/truck-01.png" alt="Schemat cieżarówki w wersji z naczepą">
+                                </td>
+                                <td class="align-middle">2014</td>
+                                <td class="align-middle">22 x 3</td>
+                                <td class="align-middle">240</td>
+                                <td class="align-middle"><a href="mailto:biuro@rywal.pl?subject=Zapytanie o dostępność: Pojazd 2"><button class="btn btn-success">Zapytaj</button></a></td>
+                            </tr>
+                            <tr class="text-center">
+                                <th class="align-middle" scope="row">3.</th>
+                                <td class="align-middle">
+                                    <img class="img-fluid" src="img/truck-01.png" alt="Schemat cieżarówki w wersji z naczepą">
+                                </td>
+                                <td class="align-middle">2013</td>
+                                <td class="align-middle">21 x 3</td>
+                                <td class="align-middle">220</td>
+                                <td class="align-middle"><a href="mailto:biuro@rywal.pl?subject=Zapytanie o dostępność: Pojazd 3"><button class="btn btn-success">Zapytaj</button></a></td>
+                            </tr>
+
+                            <!-- collapsed part of table -->
                             
-                        </div>
-                        <div class="newsPicCard">
-                           
-                            <img class="img-fluid" src="img/truck-02.png" alt="Ciężarówka załadowana dużą ilością siana">
-                        </div>
-                        
-                    </div>
+                            <tbody id="tableEnd" class="collapse" style="border-top: none;">
+                                <tr class="text-center">
+                                    <th class="align-middle" scope="row">4.</th>
+                                    <td class="align-middle">
+                                        <img class="img-fluid" src="img/truck-01.png" alt="Schemat cieżarówki w wersji z naczepą">
+                                    </td>
+                                    <td class="align-middle">2012</td>
+                                    <td class="align-middle">20 x 3</td>
+                                    <td class="align-middle">200</td>
+                                    <td class="align-middle"><a href="mailto:biuro@rywal.pl?subject=Zapytanie o dostępność: Pojazd 4"><button class="btn btn-success">Zapytaj</button></a></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <th class="align-middle" scope="row">5.</th>
+                                    <td class="align-middle">
+                                        <img class="img-fluid" src="img/truck-01.png" alt="Schemat cieżarówki w wersji z naczepą">
+                                    </td>
+                                    <td class="align-middle">2012</td>
+                                    <td class="align-middle">20 x 3</td>
+                                    <td class="align-middle">200</td>
+                                    <td class="align-middle"><a href="mailto:biuro@rywal.pl?subject=Zapytanie o dostępność: Pojazd 5"><button class="btn btn-success">Zapytaj</button></a></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <th class="align-middle" scope="row">6.</th>
+                                    <td class="align-middle">
+                                        <img class="img-fluid" src="img/truck-01.png" alt="Schemat cieżarówki w wersji z naczepą">
+                                    </td>
+                                    <td class="align-middle">2012</td>
+                                    <td class="align-middle">20 x 3</td>
+                                    <td class="align-middle">200</td>
+                                    <td class="align-middle"><a href="mailto:biuro@rywal.pl?subject=Zapytanie o dostępność: Pojazd 6"><button class="btn btn-success">Zapytaj</button></a></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <th class="align-middle" scope="row">7.</th>
+                                    <td class="align-middle">
+                                        <img class="img-fluid" src="img/truck-01.png" alt="Schemat cieżarówki w wersji z naczepą">
+                                    </td>
+                                    <td class="align-middle">2012</td>
+                                    <td class="align-middle">20 x 3</td>
+                                    <td class="align-middle">200</td>
+                                    <td class="align-middle"><a href="mailto:biuro@rywal.pl?subject=Zapytanie o dostępność: Pojazd 7"><button class="btn btn-success">Zapytaj</button></a></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <th class="align-middle" scope="row">8.</th>
+                                    <td class="align-middle">
+                                        <img class="img-fluid" src="img/truck-01.png" alt="Schemat cieżarówki w wersji z naczepą">
+                                    </td>
+                                    <td class="align-middle">2012</td>
+                                    <td class="align-middle">20 x 3</td>
+                                    <td class="align-middle">200</td>
+                                    <td class="align-middle"><a href="mailto:biuro@rywal.pl?subject=Zapytanie o dostępność: Pojazd 8"><button class="btn btn-success">Zapytaj</button></a></td>
+                                </tr>
+                                <tr class="text-center">
+                                    <th class="align-middle" scope="row">9.</th>
+                                    <td class="align-middle">
+                                        <img class="img-fluid" src="img/truck-01.png" alt="Schemat cieżarówki w wersji z naczepą">
+                                    </td>
+                                    <td class="align-middle">2012</td>
+                                    <td class="align-middle">20 x 3</td>
+                                    <td class="align-middle">200</td>
+                                    <td class="align-middle"><a href="mailto:biuro@rywal.pl?subject=Zapytanie o dostępność: Pojazd 9"><button class="btn btn-success">Zapytaj</button></a></td>
+                                </tr>
+                            </tbody>
+                            <!-- collapsed part of table end-->
+                        </tbody>
+                    </table>
+                    <div id="buttonTable" class="col text-center collapsed btn btn-light" data-toggle="collapse" data-target="#tableEnd" aria-expanded="false" aria-controls="tableEnd">
+                        <button id="buttonButton" class="btn btn-link font-weight-bold text-dark text-decoration-none my-3 mx-5 px-5"><i class="fas fa-chevron-circle-down fa-3x"></i></button>
+                    </div>    
                 </div>
             </div>
         </div>
-            <!-- second news end-->
+            <!-- table end-->
 
-            <!-- third news -->
-        <div class="row">
-            <div class="col py-5">
-                <div class="row px-3 justify-content-center">
-                    <div class="col-sm-6 col-md-5 col-lg-4 col-xl-3">
-                        <div class="newsPicCard">
-                            <img class="img-fluid" src="img/newsPic003.jpg" alt="Koła ciężarówek">
-                            <h4 class="newsHeader text-light font-weight-bold m-0 px-2 py-1">Header third</h4>
-                        </div>
-                        <div class="newsStrap mt-3 mb-1"></div>
-                        <p class="newsDate">02.05.2019</p> 
-                    </div>
-                    <div class="col-sm-6">
-                            <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, laudantium. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates harum dignissimos tempora dolor sit ea!</p>
-                            <p id="news003" class="collapse text-dark text-justify">Quos impedit exercitationem ab molestiae facere placeat soluta quam, corporis eligendi sequi minus, ut vel! Suscipit, architecto delectus qui corrupti itaque voluptas, vitae fugit ea dolorem odit iste magni officia, error asperiores quas eaque eos non deleniti. Corrupti mollitia tempora inventore sequi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla eveniet, placeat distinctio saepe quasi tempora quaerat eaque ad laudantium expedita?</p>
-                            <button class="buttonText btn btn-link font-weight-bold text-dark text-decoration-none collapsed" type="button" data-toggle="collapse" data-target="#news003" aria-expanded="false" aria-controls="news003">Czytaj dalej . . .</button>
-                    </div>
+            <!-- last info -->
+            <div class="row justify-content-center">
+                <div class="col-10 py-5">
+                    <div class="row px-1 mx-1 px-md-5 mx-md-5 my-3 py-3 my-lg-4 py-lg-4 my-xl-5 py-xl-5 justify-content-center">
+                        <h4 class="text-dark text-center">Brakuje odpowiedniego dla Ciebie pojazdu, potrzebujesz specjalnego transportu, albo masz jakieś inne dodatkowe pytania. Skontaktuj się z nami w nabardziej wygodny dla Ciebie sposób.</h4>
+                    </div>    
                 </div>
             </div>
-        </div>
-            <!-- third news end-->
+            <!-- last info end-->
 
-            <!-- nav news menu -->
-        <nav style="display: none">
-            <ul class="pagination justify-content-center">
-                <li class="page-item disabled"><a class="page-link" href="#"><span aria-hidden="true">&laquo;</span></a></li>
-                <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item disabled"><a class="page-link" href="#"><span aria-hidden="true">&raquo;</span></a></li>
-             </ul>
-        </nav>
-            <!-- nav news menu end -->
         <!-- main content end-->
 
         <!-- contact -->
@@ -147,8 +228,9 @@
         <!-- footer end-->
         
     </div>
-    <script src="script/jquery-3.3.1.min.js"></script>
-    <script src="script/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="script/script.js"></script>
 </body>
 </html>

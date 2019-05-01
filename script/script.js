@@ -108,7 +108,39 @@ $(document).ready(function(){
     $('.modal-body').find('img').attr('src', imageeSrc);
   });
   // gallery modal content display end
+
+  // text carousel
+  var allQuotes = $('.textCarousel');
+  var currentQuote = 0;
+  function changeQuote(){
+    $(allQuotes[currentQuote]).fadeOut(200, function(){
+      if(currentQuote == allQuotes.length - 1){
+        currentQuote = 0;
+      } else {
+        currentQuote++;
+      }
+      $(allQuotes[currentQuote]).fadeIn(200);  
+    });
+  };
+  var quoteTimer = setInterval(changeQuote, 5000);
+  // text carousel end
+
+  // service collapse table button
+  var tableButton = $('#buttonTable');
+  var buttonButton = $('#buttonButton');
+  $(tableButton).click(function (){
+    if ($(this).hasClass('collapsed')) {
+      $('#tableEnd').toggle(1000);
+      $(buttonButton).children('i').removeClass('fa-chevron-circle-down').addClass('fa-chevron-circle-up');
+    } else {
+      $('#tableEnd').toggle(700);
+      $(buttonButton).children('i').removeClass('fa-chevron-circle-up').addClass('fa-chevron-circle-down');
+      window.location.href = "#truckTable";
+    }
+  });
+  // service collapse table button end
 });
+
 
 
 

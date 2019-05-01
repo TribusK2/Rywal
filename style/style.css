@@ -375,3 +375,23 @@ p{
 }
 
 /* gallery end*/
+
+/* service */
+    /* table */
+    table img{
+        max-height: 100px;
+    }
+    #buttonTable{
+        cursor: pointer;
+    }
+    /* table end */
+
+    /* text carousel */
+    .textCarousel{
+        display: none;
+    }
+    .textCarousel:first-of-type{
+        display: block;
+    }
+    /* text carousel end */
+/* service end */
