@@ -45,18 +45,33 @@ $(document).ready(function(){
       // index content scroll effect end
 
       // road picture scroll effect
-      var allRoadPic = $(".roadPic");
+      var roadPic = document.getElementById("roadPic");
+      var roadPicSrc = roadPic.getAttribute("src");
       
-    if (prevScrollpos > currentScrollPos) {
-      $(allRoadPic[0]).fadeOut(100, function(){
-        $(allRoadPic[1]).fadeIn(100);
-      });
-    } else {
-      $(allRoadPic[1]).fadeOut(100, function(){
-        $(allRoadPic[0]).fadeIn(100);
-      });
-    }
-    prevScrollpos = currentScrollPos;
+      if (prevScrollpos < currentScrollPos) {
+        if(roadPicSrc == "img/forest-road.jpg"){
+          roadPic.setAttribute("src", "img/forest-road.jpg");
+          roadPic.setAttribute("alt", "Gruntowa droga w lesie");
+        }else{
+          $(roadPic).fadeOut(200, function(){
+            roadPic.setAttribute("src", "img/forest-road.jpg");
+            roadPic.setAttribute("alt", "Gruntowa droga w lesie");
+            $(roadPic).fadeIn(200);
+          });
+        };
+      } else {
+        if(roadPicSrc == "img/asphalt-road.jpg"){
+          roadPic.setAttribute("src", "img/asphalt-road.jpg");
+          roadPic.setAttribute("alt", "Droga asfaltowa");
+        }else{
+          $(roadPic).fadeOut(200, function(){
+            roadPic.setAttribute("src", "img/asphalt-road.jpg");
+            roadPic.setAttribute("alt", "Droga asfaltowa");
+            $(roadPic).fadeIn(200);
+          });
+        };
+      };
+      prevScrollpos = currentScrollPos;
       // road picture scroll effect end
   });
 
