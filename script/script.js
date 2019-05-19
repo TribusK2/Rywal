@@ -45,8 +45,10 @@ $(document).ready(function(){
       // index content scroll effect end
 
       // road picture scroll effect
+      if(document.getElementById("roadPic")){
       var roadPic = document.getElementById("roadPic");
       var roadPicSrc = roadPic.getAttribute("src");
+      };
       
       if (prevScrollpos < currentScrollPos) {
         if(roadPicSrc == "img/forest-road.jpg"){

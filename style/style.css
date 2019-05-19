@@ -109,7 +109,9 @@ p{
 /* background end*/
 
 /* menu */
-
+header{
+    opacity: 0.93;
+}
     /* scroll effect */
 #brandLogo{
     height: 90px;
