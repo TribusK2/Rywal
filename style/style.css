@@ -343,18 +343,18 @@ p{
             top: 8vh;
         }
     }
-    #submit{
-        width: 100px;
-    }
-    .counter{
-        cursor: wait !important;
-    }
     /* career content resize end*/
     
     /* carrer form */
     form{
         border-radius: 4%;
         background-color: rgba(235, 235, 255, 0.8);
+    }
+    #submit{
+        width: 100px;
+    }
+    .counter{
+        cursor: wait !important;
     }
     /* carrer form end */
 
