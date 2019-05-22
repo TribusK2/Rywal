@@ -343,6 +343,12 @@ p{
             top: 8vh;
         }
     }
+    #submit{
+        width: 100px;
+    }
+    .counter{
+        cursor: wait !important;
+    }
     /* career content resize end*/
     
     /* carrer form */

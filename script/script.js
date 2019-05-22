@@ -156,6 +156,22 @@ $(document).ready(function(){
     }
   });
   // service collapse table button end
+
+  // Button action delay
+  var btn = $('form').children('#submit');
+  var val = 10;
+  var submitInterval = setInterval(counter, 1000);
+  function counter(){
+    if(val>0){
+      btn.val(val);
+      val -=1
+    }else{
+      btn.val('Aplikuj');
+      btn.removeClass('counter');
+      clearInterval(submitInterval);
+    }
+  };
+  // Button action delay end
 });
 
 
