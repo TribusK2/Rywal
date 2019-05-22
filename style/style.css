@@ -109,8 +109,8 @@ p{
 /* background end*/
 
 /* menu */
-header{
-    opacity: 0.93;
+#navbar{
+    opacity: 0.95;
 }
     /* scroll effect */
 #brandLogo{
