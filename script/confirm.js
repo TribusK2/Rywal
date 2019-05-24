@@ -11,6 +11,11 @@ $(document).ready(function(){
         $('#checkConfirmed').prop('checked', checkConfirmed);
         // Fulfill value end
 
+        // verification code
+        var code = 1 + Math.floor(Math.random() * 1000000);
+        // console.log(code);
+        // verification code end
+
         // back button
         var backButton = $('#backButton');
         backButton.click(function(){
@@ -22,18 +27,18 @@ $(document).ready(function(){
         var textEx = /^[a-zA-Z]+$/;
         var emaiEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
-        $('#confirmForm').submit(function() {
+        $('#confirmForm').submit(function(){
             var nameCheck = $('#input1Confirmed').val();
             var sNameCheck = $('#input2Confirmed').val();
             var emailCheck = $('#emailConfirmed').val();
             var checkCheck = $('#checkConfirmed').prop('checked');
-            if (typeof(Storage) !== "undefined") {   
-                if (textEx.test(nameCheck) && textEx.test(sNameCheck) && emaiEx.test(emailCheck) && checkCheck == true){
-                    if(textEx.test(nameCheck))
-                    sessionStorage.removeItem("name");
-                    sessionStorage.removeItem("sName");
-                    sessionStorage.removeItem("email");
-                    sessionStorage.removeItem("check");
+            var codeCheck = $('#codeConfirmed').val();
+            if (typeof(Storage) !== "undefined"){   
+                if (textEx.test(nameCheck) && textEx.test(sNameCheck) && emaiEx.test(emailCheck) && checkCheck == true && codeCheck == code){
+                        sessionStorage.removeItem("name");
+                        sessionStorage.removeItem("sName");
+                        sessionStorage.removeItem("email");
+                        sessionStorage.removeItem("check");
                 } else {
                     if(!textEx.test(nameCheck)){
                         $('#input1Confirmed').nextAll('small').removeClass('validationAlert'); 
@@ -47,13 +52,16 @@ $(document).ready(function(){
                     if(checkCheck == false){
                         $('#checkConfirmed').nextAll('small').removeClass('validationAlert'); 
                     }
+                    if(codeCheck !== code){
+                        $('#codeConfirmed').nextAll('small').removeClass('validationAlert'); 
+                    }
                     return false;
                 };    
             } else {
                 alert('Twoja przeglądarka nie wspiera "sessionStorage" i twoje zgłoszenie nie może być wysłane. Zaktualizuj swoją przeglądarkę do najnowszej wersji lub spróbuj uzyć innej przeglądarki.');
                 return false;
             };    
-          });
+        });
         // Button submit end
 
     // Confirmation form end

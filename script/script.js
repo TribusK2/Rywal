@@ -158,8 +158,8 @@ $(document).ready(function(){
   // service collapse table button end
 
   // Button action delay
-  var btn = $('form').children('#submit');
-  var val = 5;
+  var btn = $('form > div').children('#submit');
+  var val = 2;
   var submitInterval = setInterval(counter, 1000);
   function counter(){
     if(val>0){

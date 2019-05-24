@@ -400,3 +400,9 @@ p{
         display: none;
     }
 /* confirm end */
+
+/* send */
+    #sendMessage{
+        min-height: 62vh;
+    }
+/* send end */
