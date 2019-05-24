@@ -157,57 +157,24 @@ $(document).ready(function(){
   });
   // service collapse table button end
 
-  // Button action
-    // Button action delay
+  // Button action delay
   var btn = $('form').children('#submit');
-  var val = 10;
+  var val = 5;
   var submitInterval = setInterval(counter, 1000);
   function counter(){
     if(val>0){
-      btn.val(val);
       val -=1
     }else{
       btn.val('Aplikuj');
       btn.removeClass('counter');
+      btn.children('span').html('Aplikuj');
+      btn.children('span').removeClass('spinner-border');
+      btn.children('span').removeClass('spinner-border-sm');
+      btn.attr('type', 'submit');
       clearInterval(submitInterval);
     }
   };
-    // Button action delay end
-
-    // GET to confirmation form
-    $('#form').submit(function() {
-      var name = $('#input1').val();
-      var sName = $('#input2').val();
-      var email = $('#email').val();
-      if (typeof(Storage) !== "undefined") {
-          sessionStorage.setItem('name', name);
-          sessionStorage.setItem('sName', sName);
-          sessionStorage.setItem('email', email);
-      } else {
-        alert('Twoja przeglądarka nie wspiera "sessionStorage" i twoje zgłoszenie nie może być wysłane. Zaktualizuj swoją przeglądarkę do najnowszej wersji lub spróbuj uzyć innej przeglądarki.')
-      }
-    });
-    // GET to confirmation form end
-  // Button action end
-
-  // Confirmation form
-    // Fulfill value
-    var nameConfirmed = sessionStorage.getItem('name');
-    var sNameConfirmed = sessionStorage.getItem('sName');
-    var emailConfirmed = sessionStorage.getItem('email');
-    $('#input1Confirmed').val(nameConfirmed);
-    $('#input2Confirmed').val(sNameConfirmed);
-    $('#emailConfirmed').val(emailConfirmed);
-    // Fulfill value end
-
-    // back button
-    var backButton = $('#backButton');
-    backButton.click(function(){
-      window.location.href = "career.html";
-    });
-    // back button end
-
-  // Confirmation form end
+  // Button action delay end
 
 });
 

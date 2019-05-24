@@ -394,3 +394,9 @@ p{
     }
     /* text carousel end */
 /* service end */
+
+/* confirm */
+    .validationAlert{
+        display: none;
+    }
+/* confirm end */
