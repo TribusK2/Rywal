@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
     // Fulfill value
     var name = sessionStorage.getItem('name');
     var sName = sessionStorage.getItem('sName');
@@ -16,7 +17,7 @@ $(document).ready(function(){
         var sNameSub = $('#input2').val();
         var emailSub = $('#email').val();
         var checkFormSub = $('#checkForm').prop('checked');
-        if (typeof(Storage) !== "undefined") {
+        if (typeof(Storage) != "undefined") {
             sessionStorage.setItem('name', nameSub);
             sessionStorage.setItem('sName', sNameSub);
             sessionStorage.setItem('email', emailSub);

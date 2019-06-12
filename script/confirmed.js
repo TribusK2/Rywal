@@ -11,31 +11,27 @@ $(document).ready(function(){
         $('#checkConfirmed').prop('checked', checkConfirmed);
         // Fulfill value end
 
-        // verification code
-        var code = 1 + Math.floor(Math.random() * 1000000);
-        console.log(code);
-        // verification code end
-
         // back button
         var backButton = $('#backButton');
         backButton.click(function(){
-        window.location.href = "career.php";
+        window.location.href = "career.html";
         });
         // back button end
 
         // Button submit
-        var nameEx = /^[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ ]+$/;
-        var sNameEx = /^[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ -]+$/;
+        var nameEx = /^[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ]+$/;
+        var sNameEx = /^(?!-)(?!.*--)[a-zA-ZżźćńółęąśŻŹĆĄŚĘŁÓŃ-]+(?<!-)$/;
         var emaiEx = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        var maxSize = 400000;
 
-        $('#confirmForm').submit(function(){
+        $('#confirmedForm').submit(function(){
             var nameCheck = $('#input1Confirmed').val();
             var sNameCheck = $('#input2Confirmed').val();
             var emailCheck = $('#emailConfirmed').val();
             var checkCheck = $('#checkConfirmed').prop('checked');
-            var codeCheck = $('#codeConfirmed').val();
+            var fileSize = $('#file')[0].files[0].size;
             if (typeof(Storage) !== "undefined"){   
-                if (nameEx.test(nameCheck) && sNameEx.test(sNameCheck) && emaiEx.test(emailCheck) && checkCheck == true && codeCheck == code){
+                if (nameEx.test(nameCheck) && sNameEx.test(sNameCheck) && emaiEx.test(emailCheck) && checkCheck == true && fileSize < maxSize){
                         sessionStorage.removeItem("name");
                         sessionStorage.removeItem("sName");
                         sessionStorage.removeItem("email");
@@ -53,8 +49,8 @@ $(document).ready(function(){
                     if(checkCheck == false){
                         $('#checkConfirmed').nextAll('small').removeClass('validationAlert'); 
                     };
-                    if(codeCheck != code){
-                        $('#codeConfirmed').nextAll('small').removeClass('validationAlert'); 
+                    if(fileSize > maxSize){
+                        $('#file').nextAll('small').removeClass('validationAlert'); 
                     };
                     return false;
                 };    

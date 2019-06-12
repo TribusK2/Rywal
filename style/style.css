@@ -356,6 +356,9 @@ p{
     .counter{
         cursor: wait !important;
     }
+    .dis{
+        display: none;
+    }
     /* carrer form end */
 
 /* career content end*/
@@ -401,8 +404,8 @@ p{
     }
 /* confirm end */
 
-/* send */
-    #sendMessage{
+/* fixed size of form */
+    .fixedHight{
         min-height: 62vh;
     }
-/* send end */
+/* fixed size of form end */

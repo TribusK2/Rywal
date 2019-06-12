@@ -175,7 +175,6 @@ $(document).ready(function(){
     }
   };
   // Button action delay end
-
 });
 
 
