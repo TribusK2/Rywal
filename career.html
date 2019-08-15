@@ -45,71 +45,76 @@
         <!-- menu end-->
 
         <!-- main content -->
-        <div class="row my-5"></div>
+        <div class="col my-5 pt-5 mx-0 px-0">
 
             <!-- picture -->
-        <div class="row">
-            <div class="col py-4 py-md-5">
-                <div class="row px-2 mx-1 mx-md-3 justify-content-center">
-                    <div class="col-12 p-0 shadow">
-                        <div class="careerPicCard">
-                            <h4 class="careerHeader text-light font-weight-bold m-0 px-2 py-1">Dołącz do Nas</h4>
+            <div class="row">
+                <div class="col py-4 py-md-5">
+                    <div class="row px-2 mx-1 mx-md-3 justify-content-center">
+                        <div class="col-12 p-0 shadow">
+                            <div class="careerPicCard">
+                                <h4 class="careerHeader text-light font-weight-bold m-0 px-2 py-1">Dołącz do Nas</h4>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
             <!-- picture end -->
 
             <!-- text -->
-        <div class="row">
-            <div class="shadow col py-5 bg-light">
-                <div class="row px-3 pb-5 justify-content-center">
-                    <div class="col-12 col-md-10">
-                        <h5>Obecnie poszukujemy kandydatów na kierowców kat. C,D.</h5>
-                        <p id="offer001" class="collapse text-dark text-justify">Quos impedit exercitationem ab molestiae facere placeat soluta quam, corporis eligendi sequi minus, ut vel! Suscipit, architecto delectus qui corrupti itaque voluptas, vitae fugit ea dolorem odit iste magni officia, error asperiores quas eaque eos non deleniti. Corrupti mollitia tempora inventore sequi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa unde ratione maiores eum delectus corrupti vel quis itaque sit quo?</p>
-                        <button class="buttonText btn btn-link font-weight-bold text-dark text-decoration-none collapsed" type="button" data-toggle="collapse" data-target="#offer001" aria-expanded="false" aria-controls="offer001">Czytaj dalej . . .</button>
+            <div class="row">
+                <div class="shadow col py-5 bg-light">
+                    <div class="row px-3 pb-5 justify-content-center">
+                        <div class="col-12 col-md-10">
+                            <h5>Obecnie poszukujemy kandydatów na kierowców kat. C,D.</h5>
+                            <p id="offer001" class="collapse text-dark text-justify">Quos impedit exercitationem ab molestiae facere placeat soluta quam, corporis eligendi sequi minus, ut vel! Suscipit, architecto delectus qui corrupti itaque voluptas, vitae fugit ea dolorem odit iste magni officia, error asperiores quas eaque eos non deleniti. Corrupti mollitia tempora inventore sequi. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa unde ratione maiores eum delectus corrupti vel quis itaque sit quo?</p>
+                            <button class="buttonText btn btn-link font-weight-bold text-dark text-decoration-none collapsed" type="button" data-toggle="collapse" data-target="#offer001" aria-expanded="false" aria-controls="offer001">Czytaj dalej . . .</button>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
             <!-- text end-->
 
             <!-- form -->
-        <div class="row">
-            <div class="col-md-10 col-lg-8 col-xl-6 align-items-center mx-auto">
-                <form id="form" class="p-3 mx-0 my-3 shadow p-sm-5 m-sm-4 m-md-5" action="confirm.html" method="get">
-                    <label>Podaj swoje imię i nazwisko:</label>
-                    <div class="row">
-                        <div class="col-12 col-sm-6">
-                            <input id="input1" type="text" name="firstName" class="form-control" placeholder="Imię" maxlength="50" required>
+            <div class="row">
+                <div class="col-md-10 col-lg-8 col-xl-6 align-items-center mx-auto">
+                    <form id="form" class="p-3 mx-0 my-3 shadow p-sm-5 m-sm-4 m-md-5" action="career.php" method="post">
+                        <label>Podaj swoje imię i nazwisko:</label>
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <input id="input1" type="text" name="firstName" class="form-control" placeholder="Imię" maxlength="50" required>
+                            </div>
+                            <div class="col-12 col-sm-6 mt-2 mt-sm-0">
+                                <input id="input2" type="text" name="lastName" class="form-control" placeholder="Nazwisko" maxlength="50" required>
+                            </div>
                         </div>
-                        <div class="col-12 col-sm-6 mt-2 mt-sm-0">
-                            <input id="input2" type="text" name="lastName" class="form-control" placeholder="Nazwisko" maxlength="50" required>
+                        <div class="form-group pt-3">
+                            <label for="email">Podaj swój adres email:</label>
+                            <input id="email" type="email" name="email" class="form-control" aria-describedby="emailHelp" placeholder="email" maxlength="50" required>
+                            <small id="emailHelp" class="form-text text-muted">Nie udostępniamy nikomu Twojego adresu.</small>
                         </div>
-                    </div>
-                    <div class="form-group pt-3">
-                        <label for="email">Podaj swój adres email:</label>
-                        <input id="email" type="email" name="email" class="form-control" aria-describedby="emailHelp" placeholder="email" maxlength="50" required>
-                        <small id="emailHelp" class="form-text text-muted">Nie udostępniamy nikomu Twojego adresu.</small>
-                    </div>
-                    <div class="form-check">
-                        <input id="checkForm" name="checkForm" type="checkbox" class="form-check-input" required>
-                        <label class="form-check-label" for="Check">Akcepuję <a href="#">plitykę prywatności</a> oraz wyrażam zgodę na przetwarzanie moich danych na potrzeby rekrutacji.</label>
-                    </div>
-                    <div class="row justify-content-center">
-                        <button id="submit" type="button" name="submit" class="btn btn-outline-primary m-3 counter">
-                            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-                            <span class="sr-only">Loading...</span>
-                        </button>
-                    </div>
-                    <hr>
-                    <p id="addText" class="text-center" style="text-indent: 0;">Możesz też skontaktować się z naszym biurem bezpośrednio, poprzez dane kontaktowe ze stopki.</p>
-                </form>
+                        <div class="form-group pt-3 dis">
+                            <label for="phone">Podaj swój numer telefonu:</label>
+                            <input id="phone" type="phone" name="phone" class="form-control" placeholder="Nr telefonu" maxlength="50">
+                        </div>
+                        <div class="form-check">
+                            <input id="checkForm" name="checkForm" type="checkbox" class="form-check-input" required>
+                            <label class="form-check-label" for="Check">Akcepuję <a href="#">plitykę prywatności</a> oraz wyrażam zgodę na przetwarzanie moich danych na potrzeby rekrutacji.</label>
+                        </div>
+                        <input type="hidden" name="g-recaptcha-response" id="g-recaptcha-response">
+                        <div class="row justify-content-center">
+                            <button id="submit" type="button" name="submit" class="btn btn-outline-primary m-3 counter">
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                <span class="sr-only">Loading...</span>
+                            </button>
+                        </div>
+                        <hr>
+                        <p id="addText" class="text-center" style="text-indent: 0;">Możesz też skontaktować się z naszym biurem bezpośrednio, poprzez dane kontaktowe ze stopki.</p>
+                    </form>
+                </div>
             </div>
-        </div>
             <!-- form end-->
-
+        </div>
         <!-- main content end-->
 
         <!-- contact -->
